@@ -1,2 +1,2 @@
-主流工具：guacamole和novnc
+**主流工具：guacamole和novnc**
 novnc和guacamole均可以在web中对主机进行远程连接。
