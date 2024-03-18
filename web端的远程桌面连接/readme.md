@@ -24,9 +24,9 @@ Apache Guacamole 是一个无客户端的远程桌面网关，它支持众多标
 
 而Guacamole由`guacamole-server` 和 `guacamole-client` 组成
 
-**guacamole-client：**是一个web app和web server的集合体，让用户通过此来访问web。
+**guacamole-client**：是一个web app和web server的集合体，让用户通过此来访问web。
 
-**guacamole-server：**接受并处理guacamole-client发送来的请求，其中包含核心组件`guacd`，用来处理不同的协议，例如FreeRDP，libssh2，LibVNC等。
+**guacamole-server**：接受并处理guacamole-client发送来的请求，其中包含核心组件`guacd`，用来处理不同的协议，例如FreeRDP，libssh2，LibVNC等。
 
 **优势**：
 
