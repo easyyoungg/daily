@@ -9,7 +9,7 @@
 ----------
 ## ELF文件类型 ##
 
-ELF(EXECUTABLE  AND  LINKABLE  FORMAT):可执行的和可链接的格式(是文件格式的标准).o文件 和 可执行文件，都是目标文件，一般使用相同的文件格式s。
+ELF(EXECUTABLE  AND  LINKABLE  FORMAT):可执行的和可链接的格式(是文件格式的标准).o文件 和 可执行文件，都是目标文件，一般使用相同的文件格式。
 
 ELF 文件主要分为以下三种类型。
 
@@ -27,7 +27,7 @@ ELF 文件主要分为以下三种类型。
 ELF 文件的作用有两个，一是用于程序链接（为了生成程序）；二是用于程序执行（为了运行程序）。
 
 ![image](elf_header.png)
-<center>ELF文件的两种视图</center>
+<p align="center">ELF文件的两种视图</p>
 
 **链接视图：**文件结构的粒度更细，将文件按功能模块的差异进行划分，最小的意义块单位是：节，静态分析的时候一般关注的是链接视图，能够理解 ELF 文件中包含的各个部分的信息。
 
@@ -38,56 +38,56 @@ ELF 文件的作用有两个，一是用于程序链接（为了生成程序）�
 共享库文件通常包含 Program Header Table 和 Section Header Table。
 
 ![image](elf_struct.jpg)
-<center>ELF文件格式</center>
+<p align="center">ELF文件格式</p>
 
 ![image](example_ELF_code.jpg)
-<center>ELF文件头实例</center>
+<p align="center">ELF文件头实例</p>
 
 ![image](example_ELF.jpg)
-<center>ELF文件头解读</center>
+<p align="center">ELF文件头解读</p>
 
 各个数据头的数据均能对应上。
 
 ----------
 ![image](elf_linkingview_pic.jpg)
-<center>ELF Linking View解读</center>
+<p align="center">ELF Linking View解读</p>
 
 ![image](elf_excuteview_pic.jpg)
-<center>ELF Excute View解读</center>
+<p align="center">ELF Excute View解读</p>
 
 ----------
 ## ELF Section head ##
 ![image](sectionhead_struct.jpg)
-<center>ELF Section head 解读</center> 
+<p align="center">ELF Section head解读</p>
 文件头中e_shoff标记位为0x3ef8 e_shentsize为0x40 e_shstrndx为0x1d
 存放所有文件表名字的表头偏移量为 0x3ef8(16120) + 0x40(64) * 0x1d(29) = 0x4638(17912)
 
 ![image](example_sectionhead_code.jpg)
-<center>ELF Section head</center> 
+<p align="center">ELF Section head</p>
 
 ![image](example_sectionhead1.jpg)
 ![image](example_sectionhead2.jpg)
-<center>ELF Section head 实际内容</center>
+<p align="center">ELF Section head实际内容</p>
  
 ![image](example_section_code.jpg)
-<center>ELF Section</center> 
+<p align="center">ELF Section</p>
 
 ![image](common_section.jpg)
-<center>常见的Section</center> 
+<p align="center">常见的Section</p>
 
 ----------
 ## ELF Programe head ##
 
 ![image](programehead_struct.jpg)
-<center>ELF Programe head 解读</center> 
+<p align="center">ELF Programe head解读</p>
 
 ![image](example_programe_code.jpg)
-<center>ELF Programe head</center> 
+<p align="center">ELF Programe head</p>
 
 通过计算得出对应的偏移位置，与下图做对应。
 
 ![image](example_programehead.jpg)
-<center>ELF Programe head 解读</center> 
+<p align="center">ELF Programe解读</p>
 
 ----------
 # THANKS #
