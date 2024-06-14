@@ -87,7 +87,8 @@ pprof是go语言中标准库中自带的功能，专门用来分析性能问题�
 
 以上代码通过监听6060端口来获取pprof的数据，从而我们需要访问http://localhost:6060/debug/pprof/profile?seconds=30 来持续监听30s(时间可便变）获取对应的profile文件，进而进行分析。
 
-我们还可以通过访问http://localhost:6060/debug/pprof/来获取进程消耗的具体内存。
+我们还可以通过访问http://localhost:6060/debug/pprof/ 来获取进程消耗的具体内存。
+
 ![Image text](pprof.png)
 
 <p align="center">pprof内存记录</p>
